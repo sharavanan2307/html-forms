@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Form</title>
+</head>
+<body>
+
+    <h2>Reservation Form</h2>
+
+    <form action="submit_reservation_form.html" method="post">
+        <label for="first_name">First Name:</label><br>
+        <input type="text" id="first_name" name="first_name" required><br><br>
+
+        <label for="last_name">Last Name:</label><br>
+        <input type="text" id="last_name" name="last_name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="reservation_date">Reservation Date:</label><br>
+        <input type="date" id="reservation_date" name="reservation_date" required><br><br>
+
+        <label for="reservation_time">Reservation Time:</label><br>
+        <input type="time" id="reservation_time" name="reservation_time" required><br><br>
+
+        <label for="num_guests">Number of Guests:</label><br>
+        <input type="number" id="num_guests" name="num_guests" min="1" required><br><br>
+
+        <label for="table_preference">Table Preference:</label><br>
+        <select id="table_preference" name="table_preference" required>
+            <option value="window">Window</option>
+            <option value="center">Center</option>
+            <option value="outdoor">Outdoor</option>
+        </select><br><br>
+
+        <label for="special_requests">Special Requests:</label><br>
+        <textarea id="special_requests" name="special_requests" rows="4"></textarea><br><br>
+
+        <label for="occasion">Occasion:</label><br>
+        <input type="text" id="occasion" name="occasion"><br><br>
+
+        <label for="meal_preference">Meal Preference:</label><br>
+        <input type="text" id="meal_preference" name="meal_preference"><br><br>
+
+        <label for="payment_method">Payment Method:</label><br>
+        <select id="payment_method" name="payment_method" required>
+            <option value="credit_card">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="cash">Cash</option>
+        </select><br><br>
+
+        <input type="submit" value="Reserve">
+    </form>
+
+</body>
+</html>

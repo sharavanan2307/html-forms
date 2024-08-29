@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+
+    <h2>Contact Form</h2>
+
+    <form action="submit_contact_form.html" method="post">
+        <label for="first_name">First Name:</label><br>
+        <input type="text" id="first_name" name="first_name" required><br><br>
+
+        <label for="last_name">Last Name:</label><br>
+        <input type="text" id="last_name" name="last_name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city" required><br><br>
+
+        <label for="state">State:</label><br>
+        <input type="text" id="state" name="state" required><br><br>
+
+        <label for="zip">Zip Code:</label><br>
+        <input type="text" id="zip" name="zip" required><br><br>
+
+        <label for="country">Country:</label><br>
+        <input type="text" id="country" name="country" required><br><br>
+
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <label for="contact_method">Preferred Contact Method:</label><br>
+        <select id="contact_method" name="contact_method" required>
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+            <option value="mail">Mail</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

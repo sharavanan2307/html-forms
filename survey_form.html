@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+
+    <h2>Survey Form</h2>
+
+    <form action="submit_survey_form.html" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="1" required><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label><br><br>
+
+        <label for="country">Country:</label><br>
+        <input type="text" id="country" name="country" required><br><br>
+
+        <label for="occupation">Occupation:</label><br>
+        <input type="text" id="occupation" name="occupation" required><br><br>
+
+        <label for="interests">Areas of Interest:</label><br>
+        <input type="checkbox" id="technology" name="interests" value="technology">
+        <label for="technology">Technology</label><br>
+        <input type="checkbox" id="science" name="interests" value="science">
+        <label for="science">Science</label><br>
+        <input type="checkbox" id="arts" name="interests" value="arts">
+        <label for="arts">Arts</label><br>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label><br><br>
+
+        <label for="satisfaction">Overall Satisfaction (1-5):</label><br>
+        <input type="number" id="satisfaction" name="satisfaction" min="1" max="5" required><br><br>
+
+        <label for="recommend">Would you recommend us?</label><br>
+        <select id="recommend" name="recommend" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4"></textarea><br><br>
+
+        <input type="submit" value="Submit Survey">
+    </form>
+
+</body>
+</html>
